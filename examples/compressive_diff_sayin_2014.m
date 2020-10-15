@@ -22,7 +22,7 @@ Sigma_u=sigma_u*ones(N,1);
 Sigma_v=sigma_v*ones(N,1);
 a=zeros(N,1);
 %a=[0.1 0.2 0.3];
-r=0.075;
+r=10;
 w_star=randn(L,1);
 %w_1=zeros(L,N);
 w_0=0*randn(L,N);
@@ -132,8 +132,5 @@ W=w_0;
 % 
 % MSD_1=mean(err_w,2);
 %%
-file_name='Diff_Partial_model_perf';
-%Theo=load(['data/' file_name '.mat']);
-%plot(10*log10([MSD Theo.epsilon Theo.MSD_t*ones(Theo.N_iter,1)]))
+
 plot(10*log10([MSD]))
-%legend('mexc','matlab')

@@ -1,14 +1,14 @@
 clear all
 close all
 addpath(genpath('.'));
-addpath(genpath('../toolbox'));
-
+addpath(genpath('../source'));
+addpath(genpath('../functions'));
 %%
 rng(356);
 
 
-L=40;
-N=80;
+L=10;
+N=20;
 M=3;
 N_iter=1e4;
 N_exp=100;
@@ -20,7 +20,7 @@ Sigma_u=sigma_u*ones(N,1);
 Sigma_v=sigma_v*ones(N,1);
 a=zeros(N,1);
 
-r=0.075;
+r=1;
 w_star=randn(L,1);
 w_0=0*randn(L,N);
 
@@ -118,8 +118,6 @@ toc
 
 MSD_1=mean(err_w,2);
 %%
-file_name='Diff_Partial_model_perf';
-%Theo=load(['data/' file_name '.mat']);
-%plot(10*log10([MSD Theo.epsilon Theo.MSD_t*ones(Theo.N_iter,1)]))
+
 plot(10*log10([MSD MSD_1]))
 legend('mexc','matlab')

@@ -1,8 +1,8 @@
 clear all
 close all
 addpath(genpath('.'));
-addpath(genpath('/Users/harrane/Dropbox/Diffusion_strategies/toolbox'));
-
+addpath(genpath('../source'));
+addpath(genpath('../functions'));
 %%
 rng(356);
 

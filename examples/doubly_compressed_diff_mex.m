@@ -1,8 +1,8 @@
 clear all
 close all
 addpath(genpath('.'));
-addpath(genpath('../../toolbox'));
-addpath(genpath('../toolbox_mex'));
+addpath(genpath('../source'));
+addpath(genpath('../functions'));
 %%
 rng(356);
 
