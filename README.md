@@ -1,7 +1,7 @@
 # C-accelerated-Diffusion-LMS
 This tool box is a C accelerated theoretical model of Diffusion LMS
 
-Please cite the follwing paper if you use this toolbox.
+Please cite the follwing paper if you use the toolbox.
 
 
 Harrane, Ibrahim El Khalil, Rémi Flamary, and Cédric Richard. "On reducing the communication cost of the diffusion LMS algorithm." IEEE Transactions on Signal and Information Processing over Networks 5.1 (2018): 100-112.
